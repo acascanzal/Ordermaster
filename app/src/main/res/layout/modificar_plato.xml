@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/modificar_plato"
+        android:layout_width="275dp"
+        android:layout_height="37dp"
+        android:text="Modificar plato"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/nombre_plato_mod_plato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nombre_plato_mod_plato"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nombre"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion_plato_mod_plato2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView10"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descripcion_plato_mod_plato"
+        android:layout_width="357dp"
+        android:layout_height="127dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Descripción"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/precio_plato_mod_plato3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_plato_mod_plato" />
+
+    <EditText
+        android:id="@+id/precio_plato_mod_plato3"
+        android:layout_width="0dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Precio"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_plato_mod_plato"
+        app:layout_constraintBottom_toTopOf="@+id/categoria_plato_mod_plato4"
+        tools:layout_editor_absoluteY="322dp" />
+
+    <EditText
+        android:id="@+id/categoria_plato_mod_plato4"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Categoria"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio_plato_mod_plato3"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/descripcion_pedido_mod_plato"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_plato_mod_plato"
+        app:layout_constraintBottom_toTopOf="@+id/precio_plato_mod_plato3"
+        tools:layout_editor_absoluteY="240dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio_plato_mod_plato3"
+        app:layout_constraintVertical_bias="0.48"
+        app:srcCompat="@mipmap/categoria_pedido_mod_plato" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/descripcion_plato_mod_plato2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@mipmap/nombre_pedido_mod_plato" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        app:layout_constraintBottom_toTopOf="@+id/categoria_plato_mod_plato4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_plato_mod_plato2"
+        app:srcCompat="@mipmap/precio_pedido_mod_plato" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="158dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Guardar"
+        android:textSize="30sp"
+        app:iconTint="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria_plato_mod_plato4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteY="563dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

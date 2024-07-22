@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/crear_plato"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:text="Crear plato"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="26dp" />
+
+
+    <Spinner
+        android:id="@+id/categoria_plato_crear_plato"
+        android:layout_width="323dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crear_plato" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crear_plato"
+        app:srcCompat="@mipmap/categoria_pedido_mod_plato" />
+
+    <EditText
+        android:id="@+id/nombre_plato_crear_plato"
+        android:layout_width="359dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView25"
+        app:layout_constraintTop_toBottomOf="@+id/categoria_plato_crear_plato" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoria_plato_crear_plato"
+        app:srcCompat="@mipmap/nombre_pedido_mod_plato" />
+
+    <EditText
+        android:id="@+id/descripcion_plato_crear_plato"
+        android:layout_width="363dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Descripción"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView24"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_plato_crear_plato" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="104dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_plato_crear_plato"
+        app:srcCompat="@mipmap/descripcion_pedido_mod_plato" />
+
+    <EditText
+        android:id="@+id/precio_plato_crear_plato"
+        android:layout_width="355dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Precio"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView23"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_plato_crear_plato" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="40dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcion_plato_crear_plato"
+        app:srcCompat="@mipmap/dollar_foreground" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="414dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Guardar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/precio_plato_crear_plato" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

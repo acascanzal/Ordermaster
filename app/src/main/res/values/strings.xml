@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">M42_Comidas</string>
+    <string name="hint_title">Type title ...</string>
+    <string name="hint_body">Type body ...</string>
+    <string name="button_save">Save</string>
+    <string name="empty_not_saved">Pedido/plato not saved because title is empty.</string>
+    <string name="fecha_incorrecta">Fecha incorrecta, pedidos de Martes a Domingo.</string>
+    <string name="hora_incorrecta">Hora incorrecta, solo abierto de 19:00 a 22:59.</string>
+    <string name="add_note">Add note</string>
+    <string name="menu_delete">Eliminar Plato</string>
+    <string name="menu_edit">Modificar Plato</string>
+    <string name="menu_deletePedido">Eliminar Pedido</string>
+    <string name="menu_editPedido">Modificar Pedido</string>
+    <string name="menu_mandarMensaje">Mandar SMS</string>
+
+    <string name="title">Title</string>
+    <string name="body">Body</string>
+    <string-array name="criterios_ordenamiento_pedidos">
+        <item>Fecha</item>
+        <item>Nombre de Cliente</item>
+        <item>Número de Teléfono</item>
+    </string-array>
+    <string-array name="criterios_ordenamiento_platos">
+        <item>Nombre del plato</item>
+        <item>Categoría del plato</item>
+        <item>Ambos</item>
+    </string-array>
+
+    <string-array name="estados_pedido">
+        <item>SOLICITADO</item>
+        <item>PREPARADO</item>
+        <item>RECOGIDO</item>
+    </string-array>
+
+    <string-array name="categorias_plato">
+        <item>PRIMERO</item>
+        <item>SEGUNDO</item>
+        <item>POSTRE</item>
+    </string-array>
+</resources>

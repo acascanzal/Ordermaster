@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="179dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/row1_buttons"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:foreground="@mipmap/anyadir_plato"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/row1_buttons"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="170dp">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/row1_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/row2_buttons"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="454dp">
+
+
+
+        <Button
+            android:id="@+id/button_addPlato"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:backgroundTint="#DE90EC"
+            android:backgroundTintMode="add"
+            android:foregroundGravity="fill_horizontal|top|left|bottom|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|right|center_horizontal|fill"
+            android:text="Crear Platos"
+            android:textColorHighlight="#B58080"
+            android:textColorLink="#D52F2F"
+            android:visibility="visible"
+            app:iconPadding="8dp"
+            app:iconTint="#00A62D2D" />
+
+        <Button
+            android:id="@+id/button_addPedido"
+            android:layout_width="16dp"
+            android:layout_height="120dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2E98EC"
+            android:text="Crear Pedido" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/row2_buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/row1_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="454dp">
+
+        <Button
+            android:id="@+id/button_listarPlatos"
+            android:layout_width="0dp"
+            android:layout_height="122dp"
+            android:layout_weight="1"
+            android:backgroundTint="#9C6BF3"
+            android:text="Listar Platos" />
+
+        <Button
+            android:id="@+id/button_listarPedidos"
+            android:layout_width="0dp"
+            android:layout_height="122dp"
+            android:layout_weight="1"
+            android:text="Listar Pedidos" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="157dp"
+        android:layout_height="52dp"
+        android:text="Inicio"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonTestCajaNegra"
+        android:layout_width="128dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#E65A8A"
+        android:text="Test Caja Negra"
+        app:layout_constraintTop_toBottomOf="@+id/row2_buttons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonTestSobrecarga"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <Button
+        android:id="@+id/botonTestSobrecarga"
+        android:layout_width="140dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#E65A8A"
+        android:text="Test sobrecarga"
+        app:layout_constraintTop_toBottomOf="@+id/row2_buttons"
+        app:layout_constraintStart_toEndOf="@+id/botonTestCajaNegra"
+        app:layout_constraintEnd_toStartOf="@+id/botonTestVolumen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+    <Button
+        android:id="@+id/botonTestVolumen"
+        android:layout_width="110dp"
+        android:layout_height="69dp"
+        android:backgroundTint="#E65A8A"
+        android:text="Test volumen"
+        app:layout_constraintTop_toBottomOf="@+id/row2_buttons"
+        app:layout_constraintStart_toEndOf="@+id/botonTestSobrecarga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

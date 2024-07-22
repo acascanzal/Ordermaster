@@ -1,0 +1,123 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="174dp"
+        android:background="@drawable/background_cuadro_azul"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+
+        tools:layout_editor_absoluteY="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@mipmap/nombre_pedido_mod_plato" />
+
+            <TextView
+                android:id="@+id/nombre_plato_lista"
+                android:layout_width="315dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Nombre del cliente"
+                android:inputType="none"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/telefono_crear_pedido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView29"
+                app:layout_constraintTop_toTopOf="@+id/imageView29" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintBottom_toTopOf="@+id/fecha_recogida_crear_pedido"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView29"
+                app:srcCompat="@mipmap/telefono_cliente" />
+
+            <TextView
+                android:id="@+id/precio_plato_lista"
+                android:layout_width="315dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Teléfono del cliente"
+                android:inputType="none"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/fecha_recogida_crear_pedido"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView31"
+                app:layout_constraintTop_toBottomOf="@+id/nombre_cliente_crear_pedido" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/fecha_recogida_crear_pedido"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31"
+                app:srcCompat="@mipmap/fecha_recogida" />
+
+            <TextView
+                android:id="@+id/categoria_plato_lista"
+                android:layout_width="315dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="12dp"
+                android:ems="10"
+                android:hint="Fecha de recogida"
+                android:inputType="none"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView33"
+                app:layout_constraintTop_toBottomOf="@+id/imageView31" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
